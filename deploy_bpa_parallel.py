@@ -14,7 +14,7 @@ def main():
     github_username = sys.argv[2]
     github_pat = sys.argv[3]
 
-    UPSTREAM_REPO = "https://github.com/Azure/business-process-automation.git"
+    UPSTREAM_REPO = "https://github.com/sumitmalik51/business-process-automation-1749582445-cddaa410.git"
     repo_name = f"business-process-automation-{deployment_id}"
 
     temp_dir = tempfile.mkdtemp()
