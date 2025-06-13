@@ -9,12 +9,13 @@ def main():
     if len(sys.argv) != 4:
         print("Usage: python deploy_bpa_parallel.py <deployment_id> <github_username> <github_pat>")
         sys.exit(1)
+    # Use deploymentId as-is from parameters
     deployment_id = sys.argv[1]
     github_username = sys.argv[2]
     github_pat = sys.argv[3]
 
-    UPSTREAM_REPO = "https://github.com/Azure/business-process-automation.git"
-    repo_name = f"bpa-deploy-{deployment_id}"
+    UPSTREAM_REPO = "https://github.com/sumitmalik51/business-process-automation-1749582445-cddaa410.git"
+    repo_name = f"business-process-automation-{deployment_id}"
 
     temp_dir = tempfile.mkdtemp()
     print(f"Cloning {UPSTREAM_REPO} into {temp_dir}")
